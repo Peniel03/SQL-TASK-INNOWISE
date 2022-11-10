@@ -18,15 +18,14 @@ CREATE TABLE Banks
  );
 
 
-
 CREATE TABLE Cards
 (Card_Id BIGINT IDENTITY(1,1) CONSTRAINT PK_Cards PRIMARY KEY,
 Card_Number  VARCHAR(100) NULL,
 Card_Balance MONEY NULL,
 Account_Id BIGINT NULL,
 );
- 
- 
+
+
 CREATE TABLE Clients
 (Client_Id BIGINT IDENTITY(1,1) CONSTRAINT PK_Clients PRIMARY KEY,
 Client_Name VARCHAR(100) NULL,
@@ -44,13 +43,12 @@ CREATE TABLE SocialStatus
  );
 
 
- 
- CREATE TABLE Subsidiaries
+USE Bank ;
+CREATE TABLE Subsidiaries
 (Subsidiary_Id BIGINT IDENTITY(1,1) CONSTRAINT PK_Subsidiaries PRIMARY KEY,
  Subsidiary_Name VARCHAR(100) NULL,
  Subsidiary_City VARCHAR(100) NULL,
  Subsidiary_Address VARCHAR(100) NULL,
  Bank_Id BIGINT NULL,
  );
- 
- 
+

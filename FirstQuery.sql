@@ -53,3 +53,4 @@ CREATE TABLE SocialStatus
  Bank_Id BIGINT NULL,
  );
  
+ 
